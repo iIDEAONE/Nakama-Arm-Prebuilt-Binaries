@@ -1,0 +1,25 @@
+server:
+  name: "nakama"
+  http:
+    address: ":7350" # HTTP सर्वर का पोर्ट नंबर
+  socket:
+    address: ":7351" # WebSocket सर्वर का पोर्ट नंबर
+  console:
+    address: ":7352" # Nakama कंसोल का पोर्ट नंबर
+  session:
+    encryption_key: "WqZftM/az9a44dAmHy6kV9bcsdzg9NZHliIzDg sbrbo=" # सत्र के लिए एन्क्रिप्शन कुंजी
+  runtime:
+    http_key: "Q+8UvpThrbk46Fg/l0feyrXDbcgeqU1qGdnSlFPGM78=" # रन टाइम के लिए HTTP कुंजी
+
+database:
+  engine: "postgres" # डेटाबेस इंजन का प्रकार
+  address:
+    - "127.0.0.1:5432" # डेटाबेस का पता और पोर्ट
+  database: "nakama" # डेटाबेस का नाम
+  username: "root" # डेटाबेस उपयोगकर्ता नाम
+  password: "" # डेटाबेस पासवर्ड
+  sslmode: "disable" # अगर TLS कनेक्शन की जरूरत नहीं है
+
+redis:
+  address:
+    - "127.0.0.1:6379" # Redis का पता और पोर्ट
