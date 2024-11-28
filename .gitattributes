@@ -1,0 +1,2 @@
+Nakama_Arm32/* filter=lfs diff=lfs merge=lfs -text
+Nakama_Arm64/* filter=lfs diff=lfs merge=lfs -text
